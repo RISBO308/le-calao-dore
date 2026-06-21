@@ -6,4 +6,15 @@ import { Component } from '@angular/core';
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
-export class Header {}
+export class Header {
+  isMenuOpen= false;
+  activeLink= 'Accueil';
+  links= ['Accueil', 'Menu', 'Témoignages', 'Horaires', 'Contact'];
+  toggleMenu(){
+    this.isMenuOpen= !this.isMenuOpen;
+  }
+  setActive(link: string){
+    this.activeLink= link;
+    this.isMenuOpen= false;
+  }
+}
