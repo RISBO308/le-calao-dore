@@ -1,24 +1,35 @@
 #menu {
-  background-color: #FAF3E0;
-  padding: 4rem 0;
+  background: transparent;
+  padding: 4.5rem 1.25rem;
 }
 
-#menu h2 { color: #2D4A3E; }
+#menu h2 {
+  color: var(--primary);
+}
 
 .card {
   border: none !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
-  transition: transform 0.2s ease !important;
-  background-color: white !important;
+  border-radius: var(--radius) !important;
+  box-shadow: 0 16px 40px rgba(45, 74, 62, 0.12) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  overflow: hidden;
 }
 
-.card:hover { transform: translateY(-4px) !important; }
+.card:hover {
+  transform: translateY(-8px) scale(1.01) !important;
+  box-shadow: 0 24px 48px rgba(45, 74, 62, 0.18) !important;
+}
 
-.card-title { color: #2D4A3E; font-weight: bold; }
+.card-title {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
 
 .price {
-  color: #C84B31;
+  color: var(--accent);
   font-size: 1.1rem;
   margin-top: 0.5rem;
+  font-weight: 700;
 }

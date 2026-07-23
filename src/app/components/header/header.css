@@ -2,24 +2,34 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2D4A3E;
-  padding: 1rem 1.5rem;
-  position: relative;
+  background: rgba(45, 74, 62, 0.96);
+  padding: 1rem 1.25rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
+
 .logo {
-  color: #E9B824;
-  font-weight: bold;
-  font-size: 1.5rem;
+  color: #ffe08a;
+  font-weight: 700;
+  font-size: 1.45rem;
+  letter-spacing: 0.03em;
 }
+
 .burger {
-  background: none;
+  background: rgba(255, 255, 255, 0.08);
   border: none;
-  color: #FAF3E0;
+  color: #fff8eb;
   font-size: 1.8rem;
   min-width: 44px;
   min-height: 44px;
   cursor: pointer;
+  border-radius: 999px;
 }
+
 nav {
   display: flex;
   flex-direction: column;
@@ -27,22 +37,38 @@ nav {
   top: 100%;
   left: 0;
   right: 0;
-  background-color: #2D4A3E;
+  background: rgba(45, 74, 62, 0.98);
+  padding: 0.5rem 0;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
+
 nav a {
-  color: #FAF3E0;
-  padding: 0.8rem 1.5rem;
+  color: #f8efe1;
+  padding: 0.85rem 1.5rem;
   text-decoration: none;
   cursor: pointer;
+  border-radius: 999px;
+  margin: 0 0.25rem;
 }
+
+nav a:hover,
 nav a.active {
-  color: #E9B824;
-  font-weight: bold;
+  color: #ffe08a;
+  background: rgba(240, 182, 79, 0.16);
+  font-weight: 600;
 }
+
 @media (min-width: 900px) {
-  .burger { display: none; }
+  .burger {
+    display: none;
+  }
+
   nav {
     position: static;
     flex-direction: row;
+    gap: 0.25rem;
+    padding: 0;
+    box-shadow: none;
+    background: transparent;
   }
 }
