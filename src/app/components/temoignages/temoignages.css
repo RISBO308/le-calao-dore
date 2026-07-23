@@ -1,2 +1,26 @@
-.testimonial-card { border-radius: 8px; color: white; }
-.bg-warning .testimonial-text, .bg-warning .testimonial-author { color: #2D4A3E; }
+.testimonials-section { background-color: #2D4A3E; }
+
+.testimonials-section h2 {
+  color: #E9B824 !important;
+}
+
+.testimonials-section h2::after {
+  background-color: #C84B31;
+}
+
+.testimonial-card {
+  border-radius: 8px;
+  height: 100%;
+  color: white;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-author {
+  color: #E9B824;
+  margin-bottom: 0;
+}

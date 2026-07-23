@@ -1,1 +1,14 @@
-.current-day { background-color: #FAF3E0; border-left: 4px solid #C84B31; }
+.horaires-section { background-color: #FAF3E0; }
+
+.list-group-item {
+  background-color: white;
+  border-left: 3px solid #E9B824 !important;
+  margin-bottom: 4px;
+  border-radius: 4px !important;
+}
+
+.current-day {
+  background-color: #FFF8E7 !important;
+  border-left: 4px solid #C84B31 !important;
+  font-weight: bold;
+}

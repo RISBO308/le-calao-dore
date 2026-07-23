@@ -1,1 +1,24 @@
-.price { color: #C84B31; }
+#menu {
+  background-color: #FAF3E0;
+  padding: 4rem 0;
+}
+
+#menu h2 { color: #2D4A3E; }
+
+.card {
+  border: none !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+  transition: transform 0.2s ease !important;
+  background-color: white !important;
+}
+
+.card:hover { transform: translateY(-4px) !important; }
+
+.card-title { color: #2D4A3E; font-weight: bold; }
+
+.price {
+  color: #C84B31;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}

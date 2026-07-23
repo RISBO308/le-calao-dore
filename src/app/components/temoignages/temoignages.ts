@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Component } from '@angular/core';
 
 interface Testimonial {
   id: number;

@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './hero.css'
 })
 export class Hero {
-  backgroundImage = '/assets/images/hero-restaurant.jpg';
+backgroundImage = 'assets/ndole.jpg';
   title = 'Saveurs authentiques du Cameroun';
   subtitle = '15 ans de tradition culinaire à Douala';
+  
 }

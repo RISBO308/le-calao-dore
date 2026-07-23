@@ -1,2 +1,22 @@
-.footer { background-color: #2D4A3E; color: #FAF3E0; }
-.footer a { color: #E9B824; text-decoration: none; }
+.footer {
+  background-color: #2D4A3E;
+  color: #FAF3E0;
+}
+
+.footer h5 {
+  color: #E9B824;
+  margin-bottom: 1rem;
+}
+
+.footer p, .footer li { color: #FAF3E0; }
+
+.footer a {
+  color: #E9B824;
+  text-decoration: none;
+}
+
+.footer a:hover { color: #C84B31; }
+
+.footer hr { border-color: rgba(255,255,255,0.2); }
+
+.footer .text-center { color: rgba(255,255,255,0.6); font-size: 0.9rem; }

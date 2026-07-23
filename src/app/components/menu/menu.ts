@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgClass } from '@angular/common';
 
 interface Dish {
   id: number;
@@ -10,7 +11,7 @@ interface Dish {
 
 @Component({
   selector: 'app-menu',
-  imports: [],
+  imports: [NgClass],
   templateUrl: './menu.html',
   styleUrl: './menu.css'
 })
@@ -22,7 +23,7 @@ export class Menu {
     { id: 4, name: 'Poulet DG', description: 'Plantain mûr, légumes croquants', price: 6000, category: 'plat' },
     { id: 5, name: 'Eru aux écailles', description: 'Légume forestier, viande fumée', price: 5000, category: 'plat' },
     { id: 6, name: 'Mbongo Tchobi', description: 'Sauce noire aux épices sauvages', price: 5500, category: 'plat' },
-    { id: 7, name: 'Pain haricot boulettes de viandes', description: 'pain, haricot rouge, viande de boeuf hachée', price: 2500, category: 'dessert' },
+    { id: 7, name: 'Pain perdu coco', description: 'Brioche, lait de coco, miel', price: 2500, category: 'dessert' },
     { id: 8, name: 'Bananes flambées', description: 'Plantain caramélisé, rhum', price: 2000, category: 'dessert' },
   ];
 }
